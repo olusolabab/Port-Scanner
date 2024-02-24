@@ -9,7 +9,7 @@ nm.scan(target, arguments=options)
 
 for host in nm.all_hosts():
     print("Host: %s (%s)" % (host, nm[host].hostname()))
-    print("State: %s (%s)" % nm[host].state())
+    print("State: %s" % nm[host].state())
     for protocol in nm[host].all_protocols():
         print("Protocol: %s" % protocol)
         portInfo = nm[host][protocol]
